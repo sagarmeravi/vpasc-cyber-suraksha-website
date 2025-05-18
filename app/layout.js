@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "VPASC Cyber Suraksha",
   description: "Showcasing cybersecurity awareness events, experiences, blogs, and activities",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }) {

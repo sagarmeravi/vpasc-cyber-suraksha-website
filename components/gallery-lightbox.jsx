@@ -40,10 +40,7 @@ export default function GalleryLightbox({ images }) {
         >
           <Image
             src={image.src || "/placeholder.svg"}
-            alt={image.alt}
-            fill
-            className="object-cover"
-            alt={image.alt}
+            alt={image.alt || "Gallery image"}
             fill
             className="object-cover"
           />
@@ -88,7 +85,7 @@ export default function GalleryLightbox({ images }) {
               <div className="relative w-full h-full">
                 <Image
                   src={images[currentImageIndex].src || "/placeholder.svg"}
-                  alt={images[currentImageIndex].alt}
+                  alt={images[currentImageIndex].alt || "Gallery image"}
                   fill
                   className="object-contain"
                 />
