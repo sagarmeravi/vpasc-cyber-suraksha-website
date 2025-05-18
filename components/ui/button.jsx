@@ -7,26 +7,23 @@ import { cn } from "@/lib/utils"
 import { Loader2 } from "lucide-react"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap font-medium transition-all relative overflow-hidden select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default:
-          "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-md hover:shadow-lg hover:from-blue-700 hover:to-blue-800 active:shadow-inner active:scale-[0.98] after:absolute after:inset-0 after:bg-white after:opacity-0 hover:after:opacity-10 after:transition-opacity",
-        secondary:
-          "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 shadow-md hover:shadow-lg hover:from-gray-200 hover:to-gray-300 active:shadow-inner active:scale-[0.98] after:absolute after:inset-0 after:bg-black after:opacity-0 hover:after:opacity-5 after:transition-opacity",
-        outline: "border-2 border-blue-600 text-blue-600 hover:bg-blue-50 active:bg-blue-100 active:scale-[0.98]",
-        ghost: "text-gray-700 hover:bg-gray-100 active:bg-gray-200 active:scale-[0.98]",
+        default: "bg-white text-gray-800 border border-gray-200 hover:bg-gray-50 active:bg-gray-100 shadow-sm",
+        primary: "bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 shadow-sm",
+        outline: "border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 active:bg-gray-100",
+        ghost: "text-gray-700 hover:bg-gray-100 active:bg-gray-200",
         link: "text-blue-600 underline-offset-4 hover:underline p-0 h-auto font-normal",
-        danger:
-          "bg-gradient-to-r from-red-600 to-red-700 text-white shadow-md hover:shadow-lg hover:from-red-700 hover:to-red-800 active:shadow-inner active:scale-[0.98]",
+        danger: "bg-red-600 text-white hover:bg-red-700 active:bg-red-800 shadow-sm",
       },
       size: {
-        sm: "h-9 px-3 text-sm rounded-lg",
-        md: "h-10 px-5 text-sm rounded-lg",
-        lg: "h-12 px-6 text-base rounded-xl",
-        xl: "h-14 px-8 text-lg rounded-xl",
-        icon: "h-10 w-10 rounded-full",
+        sm: "h-9 px-3 text-sm rounded-md",
+        md: "h-10 px-4 text-sm rounded-md",
+        lg: "h-11 px-6 text-base rounded-md",
+        xl: "h-12 px-8 text-base rounded-md",
+        icon: "h-10 w-10 rounded-md",
       },
       isLoading: {
         true: "cursor-not-allowed",
@@ -35,27 +32,6 @@ const buttonVariants = cva(
     compoundVariants: [
       {
         isLoading: true,
-        variant: "default",
-        className: "text-transparent",
-      },
-      {
-        isLoading: true,
-        variant: "secondary",
-        className: "text-transparent",
-      },
-      {
-        isLoading: true,
-        variant: "outline",
-        className: "text-transparent",
-      },
-      {
-        isLoading: true,
-        variant: "ghost",
-        className: "text-transparent",
-      },
-      {
-        isLoading: true,
-        variant: "danger",
         className: "text-transparent",
       },
     ],

@@ -130,7 +130,7 @@ export default function GalleryPage() {
                           {album.images.map((image, index) => (
                             <div
                               key={image.id}
-                              className="aspect-square relative overflow-hidden rounded-lg cursor-pointer hover:opacity-90 transition-opacity shadow-md hover:shadow-lg"
+                              className="aspect-square relative overflow-hidden rounded-md cursor-pointer hover:opacity-90 transition-opacity shadow-sm hover:shadow-md"
                               onClick={() => openLightbox(album.images, index)}
                             >
                               <Image

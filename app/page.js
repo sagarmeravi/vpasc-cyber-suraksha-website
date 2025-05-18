@@ -18,10 +18,10 @@ export default function Home() {
               Empowering students, teachers, and communities with cybersecurity awareness and education.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" variant="secondary">
+              <Button asChild size="lg">
                 <Link href="/events">Explore Events</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700/20">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/about">Learn More</Link>
               </Button>
             </div>
