@@ -3,32 +3,26 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { toast } from "@/hooks/use-toast"
 
 export default function NewsletterSignup() {
   const [email, setEmail] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const [message, setMessage] = useState(null)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
 
     if (!email) {
-      toast({
-        title: "Error",
-        description: "Please enter your email address.",
-        variant: "destructive",
-      })
+      setMessage({ type: "error", text: "Please enter your email address." })
       return
     }
 
     setIsLoading(true)
+    setMessage(null)
 
     // Simulate API call
     setTimeout(() => {
-      toast({
-        title: "Success!",
-        description: "You've been subscribed to our newsletter.",
-      })
+      setMessage({ type: "success", text: "You've been subscribed to our newsletter." })
       setEmail("")
       setIsLoading(false)
     }, 1000)
@@ -49,6 +43,9 @@ export default function NewsletterSignup() {
           {isLoading ? "Subscribing..." : "Subscribe"}
         </Button>
       </div>
+      {message && (
+        <p className={`text-sm ${message.type === "error" ? "text-red-500" : "text-green-500"}`}>{message.text}</p>
+      )}
       <p className="text-xs text-muted-foreground">We respect your privacy. Unsubscribe at any time.</p>
     </form>
   )

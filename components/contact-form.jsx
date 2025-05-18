@@ -4,7 +4,6 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { toast } from "@/hooks/use-toast"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -14,6 +13,7 @@ export default function ContactForm() {
     message: "",
   })
   const [isLoading, setIsLoading] = useState(false)
+  const [formMessage, setFormMessage] = useState(null)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -28,22 +28,16 @@ export default function ContactForm() {
 
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Error",
-        description: "Please fill in all required fields.",
-        variant: "destructive",
-      })
+      setFormMessage({ type: "error", text: "Please fill in all required fields." })
       return
     }
 
     setIsLoading(true)
+    setFormMessage(null)
 
     // Simulate API call
     setTimeout(() => {
-      toast({
-        title: "Message Sent!",
-        description: "We'll get back to you as soon as possible.",
-      })
+      setFormMessage({ type: "success", text: "Message sent! We'll get back to you soon." })
       setFormData({
         name: "",
         email: "",
@@ -84,6 +78,11 @@ export default function ContactForm() {
           />
         </div>
       </div>
+      {formMessage && (
+        <p className={`text-sm ${formMessage.type === "error" ? "text-red-500" : "text-green-500"}`}>
+          {formMessage.text}
+        </p>
+      )}
       <Button type="submit" className="w-full" disabled={isLoading}>
         {isLoading ? "Sending..." : "Send Message"}
       </Button>
