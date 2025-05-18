@@ -4,32 +4,29 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: "Dr. Jane Smith",
-      role: "Program Director",
+      name: "Shivani Chede",
+      role: "President",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Prof. John Doe",
-      role: "Technical Lead",
+      name: "Sagar",
+      role: "Secratary",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Sarah Johnson",
-      role: "Event Coordinator",
+      name: "Mahesh Kandekar",
+      role: "Media Director",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Michael Chen",
-      role: "Content Creator",
+      name: "Vinaya Lakhe",
+      role: "Activity Director",
       image: "/placeholder.svg?height=300&width=300",
     },
   ]
 
   const partners = [
-    { name: "University of Technology", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "Cyber Security Institute", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "Digital Safety Foundation", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "Tech Education Alliance", logo: "/placeholder.svg?height=100&width=200" },
+    { name: "QuickHeal Foundation", logo: "/placeholder.svg?height=100&width=200" }
   ]
 
   return (
@@ -99,8 +96,7 @@ export default function AboutPage() {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-4">
-                VPASC Cyber Suraksha was founded in 2018 by a group of cybersecurity enthusiasts who recognized the
-                growing need for digital literacy and online safety education in academic institutions.
+                VPASC Cyber Suraksha was Introduced in 2022 by Colaboration of QuickHeal Foundation
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 What started as small workshops in a few colleges has now grown into a comprehensive program reaching

@@ -81,11 +81,11 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Contact</h3>
             <address className="not-italic text-sm space-y-2">
-              <p>VPASC Campus, Main Building</p>
-              <p>123 College Road</p>
-              <p>City, State 123456</p>
+              <p>VPASC </p>
+              <p>MIDC Baramati</p>
+              <p>Baramati, Maharastra 413133</p>
               <p className="pt-2">Email: info@vpasccybersuraksha.org</p>
-              <p>Phone: +91 98765 43210</p>
+              <p>Phone: +91 XXXXXXXXXX</p>
             </address>
           </div>
         </div>
