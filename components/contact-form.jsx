@@ -83,7 +83,7 @@ export default function ContactForm() {
           {formMessage.text}
         </p>
       )}
-      <Button type="submit" isLoading={isLoading} size="lg" className="w-full">
+      <Button type="submit" variant="primary" isLoading={isLoading} size="lg" className="w-full">
         Send Message
       </Button>
     </form>

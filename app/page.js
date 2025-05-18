@@ -21,7 +21,7 @@ export default function Home() {
               <Button asChild size="lg">
                 <Link href="/events">Explore Events</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="primary" className="bg-blue-500 hover:bg-blue-600 text-white">
                 <Link href="/about">Learn More</Link>
               </Button>
             </div>
@@ -43,7 +43,7 @@ export default function Home() {
                 literacy across educational institutions. We conduct workshops, seminars, and hands-on training sessions
                 to equip students and teachers with the knowledge to stay safe online.
               </p>
-              <Button asChild className="group">
+              <Button asChild variant="primary" className="group">
                 <Link href="/about" className="flex items-center">
                   About Us <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>

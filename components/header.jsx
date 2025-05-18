@@ -46,7 +46,7 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
-          <Button asChild size="md">
+          <Button asChild variant="primary" size="md" className="px-5 h-10">
             <Link href="/contact">Get Involved</Link>
           </Button>
         </nav>
@@ -79,7 +79,7 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="w-full">
+            <Button asChild variant="primary" className="w-full">
               <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                 Get Involved
               </Link>
