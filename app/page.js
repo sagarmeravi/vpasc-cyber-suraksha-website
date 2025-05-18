@@ -17,8 +17,8 @@ export default function Home() {
             <p className="text-xl text-blue-100 mb-8">
               Empowering students, teachers, and communities with cybersecurity awareness and education.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg">
+            <div className="flex flex-wrap gap-4" >
+              <Button asChild size="lg" variant="primary" className="bg-blue-500 hover:bg-blue-600 text-white">
                 <Link href="/events">Explore Events</Link>
               </Button>
               <Button asChild size="lg" variant="primary" className="bg-blue-500 hover:bg-blue-600 text-white">
