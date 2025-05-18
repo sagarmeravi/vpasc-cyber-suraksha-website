@@ -130,7 +130,7 @@ export default function GalleryPage() {
                           {album.images.map((image, index) => (
                             <div
                               key={image.id}
-                              className="aspect-square relative overflow-hidden rounded-md cursor-pointer hover:opacity-90 transition-opacity"
+                              className="aspect-square relative overflow-hidden rounded-lg cursor-pointer hover:opacity-90 transition-opacity shadow-md hover:shadow-lg"
                               onClick={() => openLightbox(album.images, index)}
                             >
                               <Image
@@ -167,26 +167,26 @@ export default function GalleryPage() {
               className="absolute top-2 right-2 z-10 text-white hover:bg-white/20"
               onClick={closeLightbox}
             >
-              <X className="h-6 w-6" />
+              <X className="h-5 w-5" />
             </Button>
 
             {/* Navigation buttons */}
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-2 z-10 text-white hover:bg-white/20"
+              className="absolute left-4 z-10 text-white hover:bg-white/20"
               onClick={goToPrevious}
             >
-              <ChevronLeft className="h-8 w-8" />
+              <ChevronLeft className="h-6 w-6" />
             </Button>
 
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-2 z-10 text-white hover:bg-white/20"
+              className="absolute right-4 z-10 text-white hover:bg-white/20"
               onClick={goToNext}
             >
-              <ChevronRight className="h-8 w-8" />
+              <ChevronRight className="h-6 w-6" />
             </Button>
 
             {/* Current image */}

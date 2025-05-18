@@ -18,10 +18,10 @@ export default function Home() {
               Empowering students, teachers, and communities with cybersecurity awareness and education.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-blue-50 text-blue-700 hover:bg-white">
+              <Button asChild size="lg" variant="secondary">
                 <Link href="/events">Explore Events</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-blue-700">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700/20">
                 <Link href="/about">Learn More</Link>
               </Button>
             </div>
@@ -43,9 +43,9 @@ export default function Home() {
                 literacy across educational institutions. We conduct workshops, seminars, and hands-on training sessions
                 to equip students and teachers with the knowledge to stay safe online.
               </p>
-              <Button asChild>
-                <Link href="/about">
-                  About Us <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="group">
+                <Link href="/about" className="flex items-center">
+                  About Us <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
             </div>
@@ -77,7 +77,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">
                     Discover our past and upcoming cybersecurity events and workshops.
                   </p>
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="w-full">
                     <Link href="/events">View Events</Link>
                   </Button>
                 </div>
@@ -94,7 +94,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">
                     Read our latest articles on cybersecurity tips and best practices.
                   </p>
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="w-full">
                     <Link href="/blog">Read Blog</Link>
                   </Button>
                 </div>
@@ -109,7 +109,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Photo Gallery</h3>
                   <p className="text-gray-600 mb-4">Browse through photos from our past events and activities.</p>
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="w-full">
                     <Link href="/gallery">View Gallery</Link>
                   </Button>
                 </div>
@@ -124,7 +124,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Get Involved</h3>
                   <p className="text-gray-600 mb-4">Learn how you can participate in our cybersecurity initiatives.</p>
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="w-full">
                     <Link href="/contact">Contact Us</Link>
                   </Button>
                 </div>

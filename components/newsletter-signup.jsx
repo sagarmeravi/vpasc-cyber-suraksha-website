@@ -39,8 +39,8 @@ export default function NewsletterSignup() {
           className="flex-1"
           required
         />
-        <Button type="submit" disabled={isLoading}>
-          {isLoading ? "Subscribing..." : "Subscribe"}
+        <Button type="submit" isLoading={isLoading} size="md">
+          Subscribe
         </Button>
       </div>
       {message && (
