@@ -22,9 +22,9 @@ export default function EventsPage() {
     },
     {
       id: 2,
-      title: "Ethical Hacking Seminar",
+      title: "Seminar at sharda Academy",
       date: "October 5, 2023",
-      venue: "Tech Hub, City Center",
+      venue: "sharda Academy",
       description:
         "An interactive seminar on ethical hacking principles and practices, featuring demonstrations by industry experts.",
       image: "/placeholder.svg?height=300&width=500",
