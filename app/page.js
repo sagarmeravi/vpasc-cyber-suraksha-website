@@ -15,7 +15,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Securing the Digital Future</h1>
             <p className="text-xl text-blue-100 mb-8">
-              Empowering students, teachers, and communities with cybersecurity awareness and education.
+              Empowering students, teachers & communities with cybersecurity awareness and education.
             </p>
             <div className="flex flex-wrap gap-4" >
               <Button asChild size="lg" variant="primary" className="bg-blue-500 hover:bg-blue-600 text-white">
@@ -39,9 +39,7 @@ export default function Home() {
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Cyber Suraksha</h2>
               <p className="text-lg text-gray-700 mb-6">
-                VPASC Cyber Suraksha is an initiative dedicated to promoting cybersecurity awareness and digital
-                literacy across educational institutions. We conduct workshops, seminars, and hands-on training sessions
-                to equip students and teachers with the knowledge to stay safe online.
+                VPASC Cyber Suraksha is an initiative dedicated to promoting cybersecurity awareness and digital literacy across educational institutions. We conduct workshops, seminars, and hands-on training sessions to equip students and teachers with the knowledge to stay safe online.
               </p>
               <Button asChild variant="primary" className="group">
                 <Link href="/about" className="flex items-center">
@@ -148,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">What People Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -178,6 +176,17 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section> */}
+
+      {/* instagram embed */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Instagram (placeholder)</h2>
+          <div className="h-96 bg-gray-300 rounded-lg overflow-hidden">
+            <p className="text-gray-600">Instagram page would be embedded here</p>
+            {/* provide a embed link to our insta account */}
           </div>
         </div>
       </section>

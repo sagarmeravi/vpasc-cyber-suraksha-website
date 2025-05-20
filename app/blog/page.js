@@ -12,9 +12,9 @@ export default function BlogPage() {
       title: "10 Essential Cybersecurity Tips for Students",
       excerpt: "Learn the most important cybersecurity practices that every student should follow to stay safe online.",
       date: "December 5, 2023",
-      author: "Dr. Jane Smith",
+      author: "Rohan Deychowdhury",
       category: "Cyber Safety Tips",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.theforage.com%2Fblog%2Fwp-content%2Fuploads%2F2022%2F12%2Fwhat-is-cybersecurity.jpg&f=1&nofb=1&ipt=2b2e20a0bd39001907d16e891ddb162523992ad36b9fed18fffec4a95277a7d1",
     },
     {
       id: 2,
@@ -22,9 +22,9 @@ export default function BlogPage() {
       excerpt:
         "A comprehensive guide to recognizing phishing attempts and protecting yourself from these common cyber threats.",
       date: "November 20, 2023",
-      author: "Prof. John Doe",
+      author: "Ankur Mishra",
       category: "Digital Literacy",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feasydmarc.com%2Fblog%2Fwp-content%2Fuploads%2F2019%2F10%2FScreen-Shot-2019-10-02-at-09.51.09.png&f=1&nofb=1&ipt=fae77b8dc314d1a7dad3af0949e7b7b92953f469cebadae194f866a4419cf054",
     },
     {
       id: 3,
@@ -32,9 +32,9 @@ export default function BlogPage() {
       excerpt:
         "Why password security matters more than ever and how to create and manage strong, unique passwords for all your accounts.",
       date: "October 15, 2023",
-      author: "Sarah Johnson",
+      author: "Sagar Meravi",
       category: "Cyber Safety Tips",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ssbwyo.bank%2Fwp-content%2Fuploads%2F2023%2F09%2FTips-For-Creating-Strong-Passwords.jpg&f=1&nofb=1&ipt=6b8b4aff089189cac2b2dce94103148d824b4c6a33f417e795c2c3249c0693da",
     },
     {
       id: 4,
@@ -42,9 +42,9 @@ export default function BlogPage() {
       excerpt:
         "Protect your personal information on social media platforms with these essential privacy settings and best practices.",
       date: "September 28, 2023",
-      author: "Michael Chen",
+      author: "Ankur Mishra",
       category: "Digital Literacy",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcyber.gov.rw%2Findex.php%3FeID%3DdumpFile%26t%3Df%26f%3D282%26token%3Df523d9743ed5742999329f3f2af5b8c890c6eda6&f=1&nofb=1&ipt=b652fcd4a2ac8cdfc1ee1ff806b6436eb5266cb32b637d7b97817edaedf14b80",
     },
     {
       id: 5,
@@ -52,9 +52,9 @@ export default function BlogPage() {
       excerpt:
         "Essential security measures for students and educators participating in online and remote learning environments.",
       date: "August 10, 2023",
-      author: "Dr. Jane Smith",
+      author: "Rohan Deychowdhury",
       category: "Education",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fducdinhcenter.net%2Fwp-content%2Fuploads%2F2022%2F10%2Fclass-room-remote-learning-in-middle-school-1-1024x595.png&f=1&nofb=1&ipt=f665dba696f3de273c8cea6e73478f133af22e74e612813687bed78246725eaf",
     },
     {
       id: 6,
@@ -62,9 +62,9 @@ export default function BlogPage() {
       excerpt:
         "Understanding the growing threat of ransomware attacks and how individuals and organizations can protect themselves.",
       date: "July 5, 2023",
-      author: "Prof. John Doe",
+      author: "Shivani Chede",
       category: "News",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cioinsight.com%2Fwp-content%2Fuploads%2F2022%2F03%2FRansomware-Detection-scaled.jpeg&f=1&nofb=1&ipt=ac3daed3cd8824f127cb5f1d055874a154be3382f2510ead0e2d014666764706",
     },
   ]
 

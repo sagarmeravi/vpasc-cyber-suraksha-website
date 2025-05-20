@@ -66,5 +66,20 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
-  }
+  },
+  "description": "",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarmeravi/vpasc-cyber-suraksha-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagarmeravi/vpasc-cyber-suraksha-website/issues"
+  },
+  "homepage": "https://github.com/sagarmeravi/vpasc-cyber-suraksha-website#readme"
 }

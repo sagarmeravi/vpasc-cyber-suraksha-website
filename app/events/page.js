@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calendar, MapPin, Users, Download } from "lucide-react"
 
 export default function EventsPage() {
-  const years = ["2023", "2022", "2021", "2020"]
+  const years = ["2023", "2022", "2021"]
 
   const events = [
     {
@@ -22,9 +22,9 @@ export default function EventsPage() {
     },
     {
       id: 2,
-      title: "Seminar at sharda Academy",
+      title: "Seminar at Sharda Academy",
       date: "October 5, 2023",
-      venue: "sharda Academy",
+      venue: "Sharda Academy",
       description:
         "An interactive seminar on ethical hacking principles and practices, featuring demonstrations by industry experts.",
       image: "/placeholder.svg?height=300&width=500",

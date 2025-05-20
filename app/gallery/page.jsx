@@ -111,10 +111,10 @@ export default function GalleryPage() {
           <Tabs defaultValue="2023" className="w-full">
             <div className="flex justify-center mb-8">
               <TabsList>
-                <TabsTrigger value="2023">2023</TabsTrigger>
-                <TabsTrigger value="2022">2022</TabsTrigger>
-                <TabsTrigger value="2021">2021</TabsTrigger>
-                <TabsTrigger value="2020">2020</TabsTrigger>
+                <TabsTrigger value="2025">2025</TabsTrigger>
+                <TabsTrigger value="2024">2024</TabsTrigger>
+                {/* <TabsTrigger value="2023">2023</TabsTrigger>
+                <TabsTrigger value="2022">2022</TabsTrigger> */}
               </TabsList>
             </div>
 
