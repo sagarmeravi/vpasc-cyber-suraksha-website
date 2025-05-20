@@ -9,8 +9,8 @@ export default function AboutPage() {
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Sagar",
-      role: "Secratary",
+      name: "Sagar Meravi",
+      role: "Secretary",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
@@ -21,6 +21,66 @@ export default function AboutPage() {
     {
       name: "Vinaya Lakhe",
       role: "Activity Director",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Rohan Deychowdhury",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Ankur Mishra",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Pratik Maral",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Gitanjali Ghavate",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Sanika Kapse",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Amruta Sonne",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Payal Dhekane",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Monika Taur",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Purva Chavan",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Siddhi Babar",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Sakshi Kadam",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Vaishnavi Taur",
+      role: "Team Member",
       image: "/placeholder.svg?height=300&width=300",
     },
   ]
@@ -96,17 +156,14 @@ export default function AboutPage() {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-4">
-                VPASC Cyber Suraksha was Introduced in 2022 by Colaboration of QuickHeal Foundation
+                VPASC Cyber Suraksha was introduced in 2022 in collaboration with QuickHeal Foundation.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                What started as small workshops in a few colleges has now grown into a comprehensive program reaching
-                thousands of students across multiple institutions. Our team has expanded to include experts from
+                What started as small workshops in a few colleges has now grown into a comprehensive program reaching thousands of students across multiple institutions. Our team has expanded to include experts from
                 various domains of cybersecurity, education, and digital media.
               </p>
               <p className="text-lg text-gray-700">
-                Over the years, we have continuously evolved our approach and content to address the latest cyber
-                threats and challenges, ensuring that our audience receives the most relevant and up-to-date
-                information.
+                Over the years, we have continuously evolved our approach and content to address the latest cyber threats and challenges, ensuring that our audience receives the most relevant and up-to-date information.
               </p>
             </div>
             <div className="md:w-1/2">
@@ -123,7 +180,7 @@ export default function AboutPage() {
       </section>
 
       {/* Partners & Collaborations */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Our Partners</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
@@ -137,7 +194,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

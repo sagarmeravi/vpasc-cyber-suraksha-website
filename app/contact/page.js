@@ -63,11 +63,11 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-lg mb-1">Address</h3>
                         <p className="text-gray-700">
-                          VPASC Campus, Main Building
-                          <br />
-                          123 College Road
-                          <br />
-                          City, State 123456
+                          Vidya Pratishthan's Arts, Science & Commerce College,
+                          <br/>
+                          Vidyanagari, MIDC,
+                          <br/>
+                          Baramati, Maharastra 413133
                         </p>
                       </div>
                     </div>
@@ -78,14 +78,14 @@ export default function ContactPage() {
                   <CardContent className="p-6">
                     <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
                     <div className="flex space-x-4">
+                      <a href="https://www.instagram.com/vpasc_cyberforce?utm_source=qr&igsh=MW9ibnNxY2l2cmU5NQ==" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
+                        <Instagram className="h-5 w-5 text-pink-600" />
+                      </a>
                       <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
                         <Facebook className="h-5 w-5 text-blue-600" />
                       </a>
                       <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
                         <Twitter className="h-5 w-5 text-blue-400" />
-                      </a>
-                      <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
-                        <Instagram className="h-5 w-5 text-pink-600" />
                       </a>
                       <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
                         <Linkedin className="h-5 w-5 text-blue-700" />
@@ -106,8 +106,10 @@ export default function ContactPage() {
           <div className="h-96 bg-gray-300 rounded-lg overflow-hidden">
             {/* In a real app, you would embed a Google Map here */}
             <div className="w-full h-full flex items-center justify-center bg-gray-200">
-              <p className="text-gray-600">Google Map would be embedded here</p>
+              {/* <p className="text-gray-600">Google Map would be embedded here</p> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.471405732332!2d74.60972099999998!3d18.180320099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc37558dcd4dfe9%3A0x8318a8027559ebe1!2sVidya%20Pratishthan&#39;s%20Arts%2C%20Science%20%26%20Commerce%20College%2C%20Baramati!5e1!3m2!1sen!2sin!4v1747678356774!5m2!1sen!2sin" width="1370" height="385" referrerpolicy="no-referrer-when-downgrade" allowFullScreen></iframe>
             </div>
+            {/* map is not responsive */}
           </div>
         </div>
       </section>
