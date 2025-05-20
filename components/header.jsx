@@ -79,11 +79,11 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button asChild variant="primary" className="w-full">
+            {/* <Button asChild variant="primary" className="w-full">
               <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                 Get Involved
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       )}
