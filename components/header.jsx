@@ -46,9 +46,9 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
-          <Button asChild variant="primary" size="md" className="px-5 h-10">
+          {/* <Button asChild variant="primary" size="md" className="px-5 h-10">
             <Link href="/contact">Get Involved</Link>
-          </Button>
+          </Button> */}
         </nav>
 
         {/* Mobile Menu Button */}

@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calendar, MapPin, Users, Download } from "lucide-react"
 
 export default function EventsPage() {
-  const years = ["2023", "2022", "2021"]
+  const years = ["2025", "2024", "2023", "2022"]
 
   const events = [
     {
