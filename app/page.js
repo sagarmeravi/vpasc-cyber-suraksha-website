@@ -2,15 +2,18 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Shield, Calendar, BookOpen, ImageIcon, ArrowRight } from "lucide-react"
+import { Calendar, BookOpen, ImageIcon, ArrowRight, Handshake } from "lucide-react"
 import NewsletterSignup from "@/components/newsletter-signup"
 import ImpactCounter from "@/components/impact-counter"
 
 export default function Home() {
+
   return (
+    
     <div className="flex flex-col min-h-screen">
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 py-20 md:py-28">
+      <section className="relative bg-gradient-to-r from-orange-500 to-blue-800 py-20 md:py-28">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Securing the Digital Future</h1>
@@ -18,10 +21,10 @@ export default function Home() {
               Empowering students, teachers & communities with cybersecurity awareness and education.
             </p>
             <div className="flex flex-wrap gap-4" >
-              <Button asChild size="lg" variant="primary" className="bg-blue-500 hover:bg-blue-600 text-white">
+              <Button asChild size="lg" variant="primary" className="bg-orange-500 hover:bg-blue-600 text-white">
                 <Link href="/events">Explore Events</Link>
               </Button>
-              <Button asChild size="lg" variant="primary" className="bg-blue-500 hover:bg-blue-600 text-white">
+              <Button asChild size="lg" variant="primary" className="bg-orange-500 hover:bg-blue-600 text-white">
                 <Link href="/about">Learn More</Link>
               </Button>
             </div>
@@ -75,7 +78,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">
                     Discover our past and upcoming cybersecurity events and workshops.
                   </p>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="outline" className="w-full bg-blue-600 hover:bg-orange-500 text-white">
                     <Link href="/events">View Events</Link>
                   </Button>
                 </div>
@@ -92,7 +95,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">
                     Read our latest articles on cybersecurity tips and best practices.
                   </p>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="outline" className="w-full bg-blue-600 hover:bg-orange-500 text-white">
                     <Link href="/blog">Read Blog</Link>
                   </Button>
                 </div>
@@ -107,7 +110,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Photo Gallery</h3>
                   <p className="text-gray-600 mb-4">Browse through photos from our past events and activities.</p>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="outline" className="w-full bg-blue-600 hover:bg-orange-500 text-white">
                     <Link href="/gallery">View Gallery</Link>
                   </Button>
                 </div>
@@ -118,11 +121,11 @@ export default function Home() {
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center">
                   <div className="bg-red-100 p-3 rounded-full mb-4">
-                    <Shield className="h-8 w-8 text-red-600" />
+                    <Handshake className="h-8 w-8 text-red-600" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Get Involved</h3>
                   <p className="text-gray-600 mb-4">Learn how you can participate in our cybersecurity initiatives.</p>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="outline" className="w-full bg-blue-600 hover:bg-orange-500 text-white">
                     <Link href="/contact">Contact Us</Link>
                   </Button>
                 </div>
@@ -146,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      {/* <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">What People Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -169,24 +172,12 @@ export default function Home() {
                       </div>
                     </div>
                     <p className="text-gray-700 italic">
-                      "The cybersecurity workshop was eye-opening. I learned so much about protecting my online presence
-                      and digital footprint. Highly recommended!"
+                      "The cybersecurity workshop was eye-opening. I learned so much about protecting my online presence and digital footprint. Highly recommended!"
                     </p>
                   </div>
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* instagram embed */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Instagram (placeholder)</h2>
-          <div className="h-96 bg-gray-300 rounded-lg overflow-hidden">
-            <p className="text-gray-600">Instagram page would be embedded here</p>
-            {/* provide a embed link to our insta account */}
           </div>
         </div>
       </section>

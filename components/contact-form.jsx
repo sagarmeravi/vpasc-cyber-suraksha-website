@@ -83,9 +83,11 @@ export default function ContactForm() {
           {formMessage.text}
         </p>
       )}
-      <Button type="submit" variant="primary" isLoading={isLoading} size="lg" className="w-full">
-        Send Message
-      </Button>
+      <div className="flex justify-center">
+        <Button type="submit" variant="primary" isLoading={isLoading} size="lg" className="mx-auto text-center bg-blue-600 hover:bg-orange-500 text-white">
+          Send Message
+        </Button>
+      </div>
     </form>
   )
 }
