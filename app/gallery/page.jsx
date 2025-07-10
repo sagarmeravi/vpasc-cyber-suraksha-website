@@ -14,9 +14,145 @@ export default function GalleryPage() {
 
   // Sample data - in a real app, this would come from a database
   const galleryData = {
+
+    2025: [
+      {
+        id: 0,
+        title: "Training Program",
+        date: "July 8, 2025",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2025-1-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Training Program image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Cyber Wari",
+        date: "July 8, 2025",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2025-2-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Cyber Wari image ${i + 1}`,
+        })),
+      },
+    ],
+
+    2024: [
+      {
+        id: 0,
+        title: "Mass Activity at Textile Park",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-1-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Mass Activity at Textile Park image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Mass Activity at Subhadra Mall",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-2-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Mass Activity at Subhadra Mall image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Special Activity in Vidya Pratishthan's Hostels",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-3-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Special Activity in Vidya Pratishthan's Hostels image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Impact Activity on Cyber Awareness Day",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-4-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Impact Activity on Cyber Awareness Day image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Impact Activity on Guru Purnima",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-5-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Impact Activity on Guru Purnima image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Impact Activity at Phaltan Sakhar-Karkhana",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-6-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Impact Activity at Phaltan Sakhar-Karkhana image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Impact Activity in Suryanagri Mandai",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-7-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Impact Activity in Suryanagri Mandai image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Impact Activity at Bori",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-8-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Impact Activity at Bori image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Cyber Dindi",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-9-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Cyber Dindi image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Cyber Wari",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-10-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Cyber Wari image ${i + 1}`,
+        })),
+      },
+      {
+        id: 0,
+        title: "Introduction & Training Program",
+        date: "placeholder, 2024",
+        images: Array.from({ length: 4 }, (_, i) => ({
+          id: `2024-10-${i + 1}`,
+          src: `/placeholder.svg?height=600&width=800`,
+          alt: `Introduction & Training Program image ${i + 1}`,
+        })),
+      },
+    ],
     2023: [
       {
-        id: 1,
+        id: 0,
         title: "Cybersecurity Awareness Workshop",
         date: "November 15, 2023",
         images: Array.from({ length: 8 }, (_, i) => ({
@@ -26,7 +162,7 @@ export default function GalleryPage() {
         })),
       },
       {
-        id: 2,
+        id: 0,
         title: "Ethical Hacking Seminar",
         date: "October 5, 2023",
         images: Array.from({ length: 6 }, (_, i) => ({
@@ -58,19 +194,6 @@ export default function GalleryPage() {
         })),
       },
     ],
-    2021: [
-      {
-        id: 5,
-        title: "Data Protection Seminar",
-        date: "September 5, 2021",
-        images: Array.from({ length: 4 }, (_, i) => ({
-          id: `2021-1-${i + 1}`,
-          src: `/placeholder.svg?height=600&width=800`,
-          alt: `Data Protection Seminar image ${i + 1}`,
-        })),
-      },
-    ],
-    2020: [],
   }
 
   const openLightbox = (images, index) => {
@@ -96,7 +219,7 @@ export default function GalleryPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-blue-700 py-16 md:py-24">
+      <section className="bg-blue-600 py-16 md:py-11">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Photo Gallery</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -106,15 +229,23 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery */}
-      <section className="py-16 bg-white">
+      <section className="py-5 bg-white">
         <div className="container mx-auto px-4">
-          <Tabs defaultValue="2023" className="w-full">
+          <Tabs defaultValue="2025" className="w-full">
             <div className="flex justify-center mb-8">
               <TabsList>
-                <TabsTrigger value="2025">2025</TabsTrigger>
-                <TabsTrigger value="2024">2024</TabsTrigger>
-                {/* <TabsTrigger value="2023">2023</TabsTrigger>
-                <TabsTrigger value="2022">2022</TabsTrigger> */}
+                <TabsTrigger value="2025" className="bg-blue-600 text-white hover:bg-orange-500 focus:bg-orange-500">
+                  2025
+                </TabsTrigger>
+                <TabsTrigger value="2024" className="bg-blue-600 text-white hover:bg-orange-500 focus:bg-orange-500">
+                  2024
+                </TabsTrigger>
+                <TabsTrigger value="2023" className="bg-blue-600 text-white hover:bg-orange-500 focus:bg-orange-500">
+                  2023
+                </TabsTrigger>
+                <TabsTrigger value="2022" className="bg-blue-600 text-white hover:bg-orange-500 focus:bg-orange-500">
+                  2022
+                </TabsTrigger>
               </TabsList>
             </div>
 

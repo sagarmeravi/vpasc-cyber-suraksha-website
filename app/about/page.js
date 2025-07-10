@@ -2,7 +2,9 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function AboutPage() {
+
   const teamMembers = [
+    //club officers
     {
       name: "Shivani Chede",
       role: "President",
@@ -14,13 +16,25 @@ export default function AboutPage() {
       image: "/placeholder.svg?height=300&width=300",
     },
     {
+      name: "Vinaya Lakhe",
+      role: "Activity Director",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
       name: "Mahesh Kandekar",
       role: "Media Director",
       image: "/placeholder.svg?height=300&width=300",
     },
+    
+    //members(order:TY/SY/FY )
     {
-      name: "Vinaya Lakhe",
-      role: "Activity Director",
+      name: "Sakshi Kadam",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Sanika Kapse",
+      role: "Team Member",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
@@ -39,12 +53,7 @@ export default function AboutPage() {
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Gitanjali Ghavate",
-      role: "Team Member",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Sanika Kapse",
+      name: "Shravani Kadam",
       role: "Team Member",
       image: "/placeholder.svg?height=300&width=300",
     },
@@ -54,17 +63,12 @@ export default function AboutPage() {
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Payal Dhekane",
-      role: "Team Member",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Monika Taur",
-      role: "Team Member",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
       name: "Purva Chavan",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Payal Dhekane",
       role: "Team Member",
       image: "/placeholder.svg?height=300&width=300",
     },
@@ -74,30 +78,68 @@ export default function AboutPage() {
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Sakshi Kadam",
+      name: "Sampada Khaire",
       role: "Team Member",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Vaishnavi Taur",
+      name: "Atharv Sankpal",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Kiran Mundhekar",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Tanuja Masalkar",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Asmita Ekad",
+      role: "Team Member",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Vrushali Shinde",
       role: "Team Member",
       image: "/placeholder.svg?height=300&width=300",
     },
   ]
 
-  const partners = [
-    { name: "QuickHeal Foundation", logo: "/placeholder.svg?height=100&width=200" }
+  const pastMembers=[
+    {
+      name: "Yash Salve",
+      year: "2024 - 2025",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Rutuja Kalaskar",
+      year: "2024 - 2025",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Gitanjali Ghavate",
+      year: "2024 - 2025",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Vaishnavi Taur",
+      year: "2024 - 2025",
+      image: "/placeholder.svg?height=300&width=300",
+    },
   ]
 
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-blue-700 py-16 md:py-24">
+      <section className="bg-blue-600 py-16 md:py-11">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Us</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Learn about our mission to promote cybersecurity awareness and digital literacy across educational
-            institutions.
+            Learn about our mission to promote cybersecurity awareness and digital literacy across educational institutions.
           </p>
         </div>
       </section>
@@ -139,9 +181,9 @@ export default function AboutPage() {
                 <div className="aspect-square relative">
                   <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
                 </div>
-                <CardContent className="text-center py-4">
+                <CardContent className="text-center text-white py-0 px-0 bg-blue-600">
                   <h3 className="font-semibold text-xl">{member.name}</h3>
-                  <p className="text-gray-600">{member.role}</p>
+                  <p>{member.role}</p>
                 </CardContent>
               </Card>
             ))}
@@ -179,22 +221,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Partners & Collaborations */}
-      {/* <section className="py-16 bg-gray-50">
+      {/* Past members */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Partners</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            {partners.map((partner, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="aspect-[2/1] relative">
-                  <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain" />
+          <h2 className="text-3xl font-bold mb-12 text-center">Past Members</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {pastMembers.map((member, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="aspect-square relative">
+                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
                 </div>
-                <p className="text-center mt-4 font-medium">{partner.name}</p>
-              </div>
+                <CardContent className="text-center py-0 px-0 bg-orange-500 text-white">
+                  <h3 className="font-semibold text-xl">{member.name}</h3>
+                  <p>{member.year}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   )
 }

@@ -1,12 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 
 export default function ContactPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-blue-700 py-16 md:py-24">
+      <section className="bg-blue-600 py-16 md:py-10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Contact Us</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -22,8 +22,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
               <p className="text-lg text-gray-700 mb-8">
-                Fill out the form below and we'll get back to you as soon as possible. We're always looking for
-                feedback, questions, and collaboration opportunities.
+                Fill out the form below and we'll get back to you as soon as possible. We're always looking for feedback, questions, and collaboration opportunities.
               </p>
 
               <ContactForm />
@@ -82,10 +81,10 @@ export default function ContactPage() {
                         <Instagram className="h-5 w-5 text-pink-600" />
                       </a>
                       <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
-                        <Facebook className="h-5 w-5 text-blue-600" />
+                        <Youtube className="h-5 w-5 text-red-400" />
                       </a>
                       <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
-                        <Twitter className="h-5 w-5 text-blue-400" />
+                        <Facebook className="h-5 w-5 text-blue-600" />
                       </a>
                       <a href="#" className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors">
                         <Linkedin className="h-5 w-5 text-blue-700" />

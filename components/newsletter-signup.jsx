@@ -39,7 +39,7 @@ export default function NewsletterSignup() {
           className="flex-1"
           required
         />
-        <Button type="submit" variant="primary" isLoading={isLoading} size="md">
+        <Button type="submit" variant="primary" isLoading={isLoading} size="md" className="bg-blue-600 hover:bg-orange-500 text-white px-5">
           Subscribe
         </Button>
       </div>
