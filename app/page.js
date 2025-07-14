@@ -7,13 +7,10 @@ import NewsletterSignup from "@/components/newsletter-signup"
 import ImpactCounter from "@/components/impact-counter"
 
 export default function Home() {
-
   return (
-    
     <div className="flex flex-col min-h-screen">
-
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-orange-500 to-blue-800 py-20 md:py-28">
+      <section className="relative bg-gradient-to-r from-blue-500 to-blue-800 py-20 md:py-28">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Securing the Digital Future</h1>
@@ -21,10 +18,10 @@ export default function Home() {
               Empowering students, teachers & communities with cybersecurity awareness and education.
             </p>
             <div className="flex flex-wrap gap-4" >
-              <Button asChild size="lg" variant="primary" className="bg-orange-500 hover:bg-blue-600 text-white">
+              <Button asChild size="lg" variant="primary" className="bg-blue-700 hover:bg-orange-500 text-white">
                 <Link href="/events">Explore Events</Link>
               </Button>
-              <Button asChild size="lg" variant="primary" className="bg-orange-500 hover:bg-blue-600 text-white">
+              <Button asChild size="lg" variant="primary" className="bg-blue-700 hover:bg-orange-500 text-white">
                 <Link href="/about">Learn More</Link>
               </Button>
             </div>

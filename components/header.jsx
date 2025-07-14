@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Shield, Menu, X } from "lucide-react"
+import { Menu, X, ShieldCheck } from "lucide-react"
 import { usePathname } from "next/navigation"
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <Shield className="h-6 w-6 text-blue-600" />
+            <ShieldCheck className="h-6 w-6 text-blue-600" />
             <span className="font-bold text-xl">VPASC Cyber Suraksha</span>
           </Link>
         </div>
@@ -39,7 +39,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+              className={`text-sm font-medium transition-colors hover:text-orange-500 ${
                 isActive(item.href) ? "text-blue-600" : "text-foreground"
               }`}
             >
