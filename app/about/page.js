@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
+import { ExternalLink } from "lucide-react"
 
 export default function AboutPage() {
 
@@ -151,8 +152,7 @@ export default function AboutPage() {
             <div className="mb-16">
               <h2 className="text-3xl font-bold mb-6 text-center">Our Vision</h2>
               <p className="text-lg text-gray-700">
-                To create a digitally literate and cyber-aware society where individuals can confidently navigate the
-                online world while protecting themselves from cyber threats.
+                To create a digitally literate and cyber-aware society where individuals can confidently navigate the online world while protecting themselves from cyber threats.
               </p>
             </div>
 
@@ -198,11 +198,18 @@ export default function AboutPage() {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-4">
-                VPASC Cyber Suraksha was introduced in 2022 in collaboration with QuickHeal Foundation.
+                VPASC Cyber Suraksha was introduced in 2023 in collaboration with QuickHeal Foundation.
+                <a
+                  href="https://www.quickhealfoundation.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Quick Heal Foundation website"
+                >
+                  <ExternalLink className="h-6 w-6 text-blue-600 inline align-middle ml-1" />
+                </a>
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                What started as small workshops in a few colleges has now grown into a comprehensive program reaching thousands of students across multiple institutions. Our team has expanded to include experts from
-                various domains of cybersecurity, education, and digital media.
+                What started as small workshops in a few colleges has now grown into a comprehensive program reaching thousands of students across multiple institutions. Our team has expanded to include experts from various domains of cybersecurity, education, and digital media.
               </p>
               <p className="text-lg text-gray-700">
                 Over the years, we have continuously evolved our approach and content to address the latest cyber threats and challenges, ensuring that our audience receives the most relevant and up-to-date information.
